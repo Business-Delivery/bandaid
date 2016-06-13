@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Example1<f/title>
+</head>
+
+<body>
+
+<!-- BEGIN BANDAID CODE -->
+<style>
+#notavailablemsg {
+	font-size: 30px;
+	color: #f04e37;
+	display: inline;
+	display: none;
+
+}
+#notavailablemsg div {
+	display: inline;
+}
+#submsg {
+	font-size: 22px;
+	display: none;
+}
+#cat-title {
+	font-style: italic;
+}
+</style>
+<center>
+<div id="notavailablemsg">
+<div>We do not currently carry </div><br><div id="cat-title">these items</div><div> at this location.</div>
+</div>
+<div id="submsg">
+We apologize for the inconvenience.
+</div>
+</center>
+
+<script>
+var errortitle = document.getElementsByTagName("title")[0].innerHTML;
+document.getElementById("cat-title").innerHTML = errortitle;
+</script>
+<script>
+switch (errortitle) {
+    case 'Example1':
+    case 'Example2':
+	document.getElementById("notavailablemsg").style.display = "block";
+	document.getElementById("submsg").style.display = "block";
+}
+	</script>
+<!-- END BANDAID CODE -->
+
+</body>
+</html>
