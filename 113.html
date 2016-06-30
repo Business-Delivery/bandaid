@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Example1</title>
+<title>
+Saratoga
+</title>
 </head>
 
 <body>
@@ -44,12 +46,24 @@ document.getElementById("cat-title").innerHTML = errortitle;
 </script>
 <script>
 switch (errortitle) {
-    case 'Example1':
-    case 'Example2':
+    case 'Saratoga':
+	case 'Carnival':
+	case 'Rave':
+	case 'Wings':
+	case 'Kent':
+	case 'Export':
 	document.getElementById("notavailablemsg").style.display = "block";
 	document.getElementById("submsg").style.display = "block";
 }
 	</script>
+    
+<script>
+var itemavailable = document.getElementsByClassName('product-image');
+if (itemavailable.length > 0) {
+	document.getElementById("notavailablemsg").style.display = "none";
+	document.getElementById("submsg").style.display = "none";
+}
+</script>
 <!-- END BANDAID CODE -->
 
 </body>

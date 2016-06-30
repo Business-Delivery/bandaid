@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Example1</title>
+<title>
+Saratoga
+</title>
 </head>
 
 <body>
@@ -13,7 +15,6 @@
 	font-size: 30px;
 	color: #f04e37;
 	display: inline;
-	display: none;
 	width: 998px;
 
 }
@@ -23,7 +24,6 @@
 #submsg {
 	width: 998px;
 	font-size: 22px;
-	display: none;
 }
 #cat-title {
 	font-style: italic;
@@ -39,17 +39,11 @@ We apologize for the inconvenience.
 </center>
 
 <script>
-var errortitle = document.getElementsByTagName("H1")[0].innerHTML;
-document.getElementById("cat-title").innerHTML = errortitle;
+if ($(".product-image")[0]){
+	document.getElementById("notavailablemsg").style.display = "none";
+	document.getElementById("submsg").style.display = "none";
+} 
 </script>
-<script>
-switch (errortitle) {
-    case 'Example1':
-    case 'Example2':
-	document.getElementById("notavailablemsg").style.display = "block";
-	document.getElementById("submsg").style.display = "block";
-}
-	</script>
 <!-- END BANDAID CODE -->
 
 </body>
