@@ -36,11 +36,11 @@ We apologize for the inconvenience.
 
 <!-- BEGIN BANDAID FOOTER CODE -->
 <script>
-if ($(".product-image")[0]){
-	document.getElementById("notavailablemsg").style.display = "none";
+if ($(".product-image")[0]){ //Check if any products are on page
+	document.getElementById("notavailablemsg").style.display = "none"; //If yes, hide message
 	document.getElementById("submsg").style.display = "none";
 } else {
-   document.getElementById("notavailablemsg").style.display = "block";
+   document.getElementById("notavailablemsg").style.display = "block"; //If no, show message
 	document.getElementById("submsg").style.display = "block";
 }
 </script>
