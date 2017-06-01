@@ -1,0 +1,46 @@
+<!-- BEGIN BANDAID CODE -->
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+#notavailablemsg {
+	font-size: 30px;
+	color: #f04e37;
+	display: inline;
+	width: 998px;
+
+}
+#notavailablemsg div {
+	display: inline;
+}
+#submsg {
+	width: 998px;
+	font-size: 22px;
+}
+#cat-title {
+	font-style: italic;
+}
+</style>
+<center>
+<div id="notavailablemsg">
+<div>No items are available for delivery at this time.</div>
+</div>
+<div id="submsg">
+We apologize for the inconvenience.
+</div>
+</center>
+<script>
+if ($(".product-image")[0]){
+	document.getElementById("notavailablemsg").style.display = "none";
+	document.getElementById("submsg").style.display = "none";
+} else {
+   
+}
+
+</script>
+<!-- END BANDAID CODE -->
+
+
+<img class="product-image" onerror="this.onerror='';this.src='/wcsstore/CostcoGLOBALSAS/images/unavailable_150.png'" src="https://richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12028466&amp;imageId=39312__1&amp;recipeName=350" alt="Costco Bakery Muffins, Blueberry Muffins, 5.5 oz, 6 ct" title="Costco Bakery Muffins, Blueberry Muffins, 5.5 oz, 6 ct">
+
+

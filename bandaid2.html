@@ -1,0 +1,48 @@
+
+<!-- BEGIN BANDAID CODE -->
+<style>
+#notavailablemsg {
+	font-size: 30px;
+	color: #f04e37;
+	display: block;
+	width: 998px;
+	display: none;
+
+}
+#notavailablemsg div {
+	display: block;
+}
+#submsg {
+	width: 998px;
+	font-size: 22px;
+	display: none;
+}
+#cat-title {
+	font-style: italic;
+}
+</style>
+<center>
+<div id="notavailablemsg">
+<div>No items are available for delivery at this time.</div>
+</div>
+<div id="submsg">
+We apologize for the inconvenience.
+</div>
+</center>
+
+<!-- END BANDAID CODE -->
+
+
+
+<!-- BEGIN BANDAID FOOTER CODE -->
+<script>
+if ($(".product-image")[0]){
+	document.getElementById("notavailablemsg").style.display = "none";
+	document.getElementById("submsg").style.display = "none";
+} else {
+   document.getElementById("notavailablemsg").style.display = "block";
+	document.getElementById("submsg").style.display = "block";
+}
+</script>
+
+<!-- END BANDAID FOOTER CODE -->
