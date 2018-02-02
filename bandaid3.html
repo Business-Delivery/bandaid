@@ -1,0 +1,57 @@
+
+<!-- BEGIN BANDAID CODE -->
+<style>
+	.bandaidcontainer {
+		width: 100%;
+		text-align: center;
+	}
+#notavailablemsg {
+	font-size: 26px;
+	color: #f04e37;
+	width: 100%;
+	display: none;
+
+}
+#notavailablemsg div {
+	display: block;
+}
+#submsg {
+	width: 100%;;
+	font-size: 22px;
+	display: none;
+}
+#cat-title {
+	font-style: italic;
+}
+	@media screen and (max-width: 1090px) {
+		.bandaidcontainer {
+			text-align: left;
+		}
+	}
+</style>
+	<div class="bandaidcontainer">
+<div id="notavailablemsg">
+<div>There are no items in this category available for delivery at this time.</div>
+</div>
+<div id="submsg">
+We apologize for the inconvenience.
+</div>
+
+	</div>
+
+<!-- END BANDAID CODE -->
+
+
+
+<!-- BEGIN BANDAID FOOTER CODE -->
+<script>
+if ($(".product-image")[0]){ //Check if any products are on page
+	document.getElementById("notavailablemsg").style.display = "none"; //If yes, hide message
+	document.getElementById("submsg").style.display = "none";
+} else {
+   document.getElementById("notavailablemsg").style.display = "block"; //If no, show message
+	document.getElementById("submsg").style.display = "block";
+}
+</script>
+
+<!-- END BANDAID FOOTER CODE -->
